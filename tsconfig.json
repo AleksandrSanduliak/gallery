@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "include": [".eslintrc.cjs" ], 
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

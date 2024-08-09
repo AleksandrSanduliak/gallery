@@ -1,10 +1,12 @@
 import React from 'react';
 import { useAppSelector } from '../../hooks/redux';
 import { Themes } from '../../types/theme';
+import { colors } from '../../consts/colors';
 
 const Logo = () => {
   const theme = useAppSelector((state) => state.theme.themeStatus);
-  const themeColor = theme === Themes.DARK ? '#fff' : '#121212';
+  const themeColor =
+    theme === Themes.DARK ? colors.primaryWhite : colors.primaryBlack;
 
   return (
     <svg

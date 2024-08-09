@@ -1,4 +1,5 @@
 import React from 'react';
+import cl from './themeSwitcher.module.scss';
 import Light from '../../../assets/icons/Light';
 import Dark from '../../../assets/icons/Dark';
 import { useAppSelector } from '../../../hooks/redux';
@@ -20,7 +21,7 @@ const ThemeSwitcher = () => {
   }, [theme]);
 
   return (
-    <div onClick={setThemeStatus}>
+    <div className={cl.themeSwitcher} onClick={setThemeStatus}>
       {theme === Themes.DARK && <Light />}
       {theme === Themes.LIGHT && <Dark />}
     </div>

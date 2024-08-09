@@ -1,0 +1,63 @@
+.h1 {
+  font-family: $third-family;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.h2 {
+  font-family: $third-family;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.bigLight {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
+}
+
+.bigMedium {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
+}
+
+.baseLight {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: #000;
+}
+
+.smallLight {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+  color: #000;
+}
+
+.boldUpper {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.smallBold {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #000;
+}

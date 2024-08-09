@@ -1,0 +1,15 @@
+.input {
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 340px;
+  height: 36px;
+  background: $secondary-black;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: $primary-dark-gray;
+  }
+}

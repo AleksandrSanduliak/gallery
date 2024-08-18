@@ -1,6 +1,6 @@
 :root {
   --content-width: 77.5rem; //1240px
-  --container-offset: 0.938rem;
+  --container-offset: 1.25rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 }
 

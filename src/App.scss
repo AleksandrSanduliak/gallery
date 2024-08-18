@@ -13,6 +13,16 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -36,8 +46,17 @@ body {
   color: $primary-white;
 }
 
+#modal-root {
+  position: relative;
+  z-index: 9999999;
+}
+
 main {
   flex: 1 1 auto;
+}
+
+footer {
+  padding: 1.5rem 0;
 }
 
 img {

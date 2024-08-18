@@ -3,15 +3,14 @@ import cl from './themeSwitcher.module.scss';
 import Light from '../../../assets/icons/Light';
 import Dark from '../../../assets/icons/Dark';
 import { useAppSelector } from '../../../hooks/redux';
-import { setTheme } from '../../../store/themeSlice';
 import { useDispatch } from 'react-redux';
 import { Themes } from '../../../types/theme';
+import { setTheme } from '../../../store/slice/themeSlice';
 
 const ThemeSwitcher = () => {
   const theme = useAppSelector((state) => state.theme.themeStatus);
   const dispatch = useDispatch();
   const setThemeStatus = () => {
-    console.log('onClick');
     dispatch(setTheme());
   };
 

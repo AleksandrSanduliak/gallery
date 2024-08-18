@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../../assets/icons/Logo';
 import cl from './header.module.scss';
-import ThemeSwitcher from '../../atoms/themeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../atoms/ThemeSwitcher/ThemeSwitcher';
 
 const Header = () => {
   return (

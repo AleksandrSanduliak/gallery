@@ -1,13 +1,16 @@
 import React from 'react';
 import cl from './search.module.scss';
-import { useAppSelector } from '../../../hooks/redux';
-import { Themes } from '../../../types/theme';
 import Glass from '../../../assets/icons/Glass';
-import InputCross from '../../../assets/icons/InputCross';
-const Search = () => {
-  const theme = useAppSelector((state) => state.theme.themeStatus);
-  const themeStyle = theme === Themes.DARK ? cl.darkTheme : cl.lightTheme;
-  const [input, setInput] = React.useState<string>('');
+import Cross from '../../../assets/icons/Cross';
+import Input from '../../atoms/Input/Input';
+
+const Search = ({
+  input,
+  setInput,
+}: {
+  input: string;
+  setInput: React.Dispatch<React.SetStateAction<string>>;
+}) => {
   const clearInput = () => setInput('');
 
   return (
@@ -16,16 +19,15 @@ const Search = () => {
         <div className={cl.icon}>
           <Glass />
         </div>
-        <input
+        <Input
+          variant="search"
           placeholder="Painting title"
           value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className={`${themeStyle} ${cl.input}`}
-          type="text"
+          setValue={setInput}
         />
-        {input.length > 0 && (
+        {input?.length > 0 && (
           <div className={cl.cross} onClick={clearInput}>
-            <InputCross />
+            <Cross width={12} height={12} />
           </div>
         )}
       </div>

@@ -1,7 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Themes } from '../types/theme';
+import { Themes } from '../../types/theme';
 
-const initialState = {
+interface ITheme {
+  themeStatus: string;
+}
+
+const initialState: ITheme = {
   themeStatus: localStorage?.getItem('theme') ?? Themes.DARK,
 };
 

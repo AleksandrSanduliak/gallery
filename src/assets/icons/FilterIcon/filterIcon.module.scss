@@ -1,0 +1,15 @@
+.darkTheme {
+  &:hover {
+    path {
+      fill: $primary-white;
+    }
+  }
+}
+
+.lightTheme {
+  &:hover {
+    path {
+      fill: $primary-black;
+    }
+  }
+}

@@ -1,13 +1,9 @@
 import React from 'react';
 import './App.scss';
-import MainPage from './components/pages/mainPage/MainPage';
+import MainPage from './components/pages/MainPage/MainPage';
 
 function App() {
-  return (
-    <>
-      <MainPage />
-    </>
-  );
+  return <MainPage />;
 }
 
 export default App;

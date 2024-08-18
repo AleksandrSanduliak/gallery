@@ -1,0 +1,34 @@
+.pagination {
+  margin-top: 2.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  margin: 0 1.25rem;
+  display: flex;
+}
+
+.number {
+  padding: 0.063rem 0.5rem;
+  cursor: pointer;
+}
+
+.active {
+  border-radius: 0.25rem;
+}
+
+.activeDarkTheme {
+  background: $primary-white;
+  color: black;
+}
+
+.activeLightTheme {
+  background: $secondary-black;
+  color: white;
+}
+
+.arrows {
+  cursor: pointer;
+}

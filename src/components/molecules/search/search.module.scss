@@ -1,26 +1,17 @@
+.wrapper {
+  @media (max-width: 425.98px) {
+    width: auto;
+    flex: 1;
+  }
+}
+
 .inputWrapper {
   position: relative;
   width: 21.25rem;
   margin-right: 1.25rem;
-}
 
-.input {
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem 0.5rem 2.75rem;
-  width: 21.25rem;
-  height: 2.25rem;
-
-  text-overflow: ellipsis;
-
-  &::placeholder {
-    font-family: $font-family;
-    font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 140%;
-  }
-
-  &:focus::placeholder {
-    color: transparent;
+  @media (max-width: 425.98px) {
+    width: auto;
   }
 }
 
@@ -36,26 +27,4 @@
   top: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
-}
-
-.darkTheme {
-  background: $secondary-black;
-  color: $primary-light-gray;
-
-  &:focus {
-    border: 1px solid $primary-light-gray;
-  }
-
-  &::placeholder {
-    color: $primary-light-gray;
-  }
-}
-
-.lightTheme {
-  border: 1px solid $primary-light-gray;
-  color: $primary-dark-gray;
-
-  &::placeholder {
-    color: $secondary-gray;
-  }
 }

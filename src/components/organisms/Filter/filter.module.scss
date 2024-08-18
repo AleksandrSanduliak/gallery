@@ -1,0 +1,83 @@
+.filter {
+  width: 1.5rem;
+  height: 2.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.darktheme {
+  &:hover {
+    background-color: $primary-dark-gray;
+  }
+}
+
+.lightTheme {
+  &:hover {
+    background-color: $primary-light-gray;
+  }
+}
+
+.modal {
+  width: 45rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: $primary-black;
+
+  @media (max-width: 1440.98px) {
+    width: 50vw;
+  }
+
+  @media (max-width: 768.98px) {
+    width: 100vw;
+  }
+}
+
+.modalDarkTheme {
+  background-color: $primary-black;
+}
+
+.modalLightTheme {
+  background-color: $secondary-white;
+}
+
+.inner {
+  position: relative;
+  padding: 0 1.25rem;
+}
+
+.cross {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.2rem;
+}
+
+.content {
+  padding-top: 11.25rem;
+
+  @media (max-width: 425.98px) {
+    padding-top: 7.813rem;
+  }
+}
+
+.buttons {
+  margin-top: 14.375rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1440.98px) {
+    margin-top: 10vw;
+  }
+
+  button {
+    text-decoration: underline;
+  }
+}

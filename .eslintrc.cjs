@@ -1,6 +1,15 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, es2023: true },
+  overrides: [
+    {
+      files: ['**/*.cjs'],
+      env: {
+        es2023: true,
+        node: true,
+      },
+    },
+  ],
   extends: [
     'airbnb',
     'airbnb-typescript',
